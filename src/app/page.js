@@ -55,10 +55,10 @@ export default function MaintenancePage() {
               className="w-6 h-6 object-contain"
             />
             <a
-              href="mailto:infonaartsfoundation@gmail.com"
+              href="mailto:infonartsfoundation@gmail.com"
               className="hover:underline transition-colors duration-300"
             >
-               infonaartsfoundation@gmail.com
+               infonartsfoundation@gmail.com
             </a>
           </div>
           <div className="flex items-center gap-2 transition-transform duration-300 hover:scale-105 hover:text-green-300">
