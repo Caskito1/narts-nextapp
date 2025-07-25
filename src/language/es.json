@@ -1,0 +1,33 @@
+{
+  "navbar": {
+    "about-us": "Quienes Somos",
+    "projects": "Proyectos",
+    "gallery": "Galería",
+    "press": "Prensa",
+    "contact": "Contacto"
+  },
+  "header": {
+    "title": "“La cultura no es legado, es lenguaje vivo, conflicto compartido y potencia de futuro.”"
+  },
+   "AboutUs": {
+    "title": "Quienes somos"
+  },
+    "Proyects": {
+    "title": "Nuestros Proyectos"
+  },
+  "Gallery": {
+    "title": "Galería de fotos"
+  },
+  "Press": {
+    "title": "Prensa"
+  },
+  "Contact": {
+    "title": "Contacto"
+  },
+  "footer": {
+    "description": "Impulsando el cambio social a través de la cultura y la educación.",
+    "links": "Enlaces",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados."
+  }
+}

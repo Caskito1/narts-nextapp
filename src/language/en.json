@@ -1,0 +1,34 @@
+{
+  "navbar": {
+    "about-us": "About Us",
+    "projects": "Projects",
+    "gallery": "Gallery",
+    "press": "Press",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "“Culture is not a legacy; it is a living language, a shared struggle, and a power for the future.”"
+  },
+  "AboutUs": {
+    "title": "About us"
+  },
+  "Proyects": {
+    "title": "Our Proyects"
+  },
+  "Gallery": {
+    "title": "Photo Gallery"
+  },
+  "Press": {
+    "title": "Press"
+  },
+  "Contact": {
+    "title": "Contact"
+  },
+
+  "footer": {
+    "description": "Driving social change through culture and education.",
+    "links": "Links",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  }
+}
