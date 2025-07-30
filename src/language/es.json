@@ -12,9 +12,37 @@
    "AboutUs": {
     "title": "Quienes somos"
   },
-    "Proyects": {
-    "title": "Nuestros Proyectos"
+   "TeamsSections": {
+    "title": "Nuestro equipo",
+    "subtitle": "Conocé a nuestras directoras"
   },
+   
+  "Projects": {
+    "title": "Nuestros Proyectos",
+    "projectCards": {
+      "project1": {
+        "title": "Proyecto 1",
+        "shortDescription": "Descripción breve del proyecto."
+      },
+      "project2": {
+        "title": "Festival Noir",
+        "shortDescription": "Festival literario de género negro."
+      },
+      "project3": {
+        "title": "Proyecto 3",
+        "shortDescription": "Descripción breve del proyecto."
+      },
+      "project4": {
+        "title": "Proyecto 4",
+        "shortDescription": "Descripción breve del proyecto."
+      },
+      "project5": {
+        "title": "Proyecto 5",
+        "shortDescription": "Descripción breve del proyecto."
+      }
+    }
+  },
+
   "Gallery": {
     "title": "Galería de fotos"
   },

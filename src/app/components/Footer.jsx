@@ -1,58 +1,108 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
-import {
-  Facebook,
-  Instagram,
-  Mail,
-} from "lucide-react"; // O usa iconos que prefieras
+import { Facebook, Instagram, Mail } from "lucide-react";
+import scrollIntoView from "smooth-scroll-into-view-if-needed";
 
 export default function Footer() {
   const { t } = useLanguage();
 
+const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      scrollIntoView(section, {
+        behavior: "smooth",
+        block: "start",
+        scrollMode: "if-needed",
+      });
+    }
+  };
+
   return (
-    <footer className="bg-black text-white py-10 px-6 md:px-20 mt-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Columna 1 - Información */}
+    <footer className="bg-[var(--color-text-primary)] text-white py-20 px-6 md:px-20 mt-20 ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+        {/* Info institucional */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">Fundación Ejemplo</h2>
-          <p className="text-sm opacity-80">
-            {t("footer.description")}
-          </p>
-        </div>
-
-        {/* Columna 2 - Navegación */}
-        <div className="space-y-2 text-sm">
-          <h3 className="font-semibold mb-1">{t("footer.links")}</h3>
-          <ul className="space-y-1">
-            <li><a href="#home" className="hover:underline">{t("navbar.home")}</a></li>
-            <li><a href="#projects" className="hover:underline">{t("navbar.projects")}</a></li>
-            <li><a href="#gallery" className="hover:underline">{t("navbar.gallery")}</a></li>
-            <li><a href="#contact" className="hover:underline">{t("navbar.contact")}</a></li>
-          </ul>
-        </div>
-
-        {/* Columna 3 - Contacto & redes */}
-        <div className="space-y-2 text-sm">
-          <h3 className="font-semibold mb-1">{t("footer.contact")}</h3>
-          <p>Email: contacto@fundacion.org</p>
-          <div className="flex gap-4 mt-2">
-            <a href="#" className="hover:text-gray-300" aria-label="Facebook">
-              <Facebook size={18} />
-            </a>
-            <a href="#" className="hover:text-gray-300" aria-label="Instagram">
-              <Instagram size={18} />
-            </a>
-            <a href="mailto:contacto@fundacion.org" className="hover:text-gray-300" aria-label="Email">
-              <Mail size={18} />
-            </a>
+          <h2 className="text-2xl font-bold mb-4">Fundación Ejemplo</h2>
+          <p className="text-sm opacity-80 mb-6">{t("footer.description")}</p>
+          <div className="text-sm space-y-1">
+            <p>Email: contacto@fundacion.org</p>
+            <p>Tel: +54 11 1234 5678</p>
+            <div className="flex gap-4 mt-4">
+              <a href="#" className="hover:text-gray-300" aria-label="Facebook">
+                <Facebook size={20} />
+              </a>
+              <a href="#" className="hover:text-gray-300" aria-label="Instagram">
+                <Instagram size={20} />
+              </a>
+              <a href="mailto:contacto@fundacion.org" className="hover:text-gray-300" aria-label="Email">
+                <Mail size={20} />
+              </a>
+            </div>
           </div>
+        </div>
+
+        {/* Formulario de contacto */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4">{t("footer.contactFormTitle") || "Formulario de contacto"}</h3>
+          <form className="space-y-4">
+            <div>
+              <label htmlFor="name" className="block text-sm mb-1">
+                {t("footer.name") || "Nombre"}
+              </label>
+              <input
+                type="text"
+                id="name"
+                className="w-full px-4 py-2 rounded bg-white text-black focus:outline-none"
+                placeholder="Juan Pérez"
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm mb-1">
+                {t("footer.email") || "Email"}
+              </label>
+              <input
+                type="email"
+                id="email"
+                className="w-full px-4 py-2 rounded bg-white text-black focus:outline-none"
+                placeholder="juan@example.com"
+              />
+            </div>
+            <div>
+              <label htmlFor="message" className="block text-sm mb-1">
+                {t("footer.message") || "Mensaje"}
+              </label>
+              <textarea
+                id="message"
+                rows={4}
+                className="w-full px-4 py-2 rounded bg-white text-black focus:outline-none"
+                placeholder="Escribí tu mensaje aquí..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="bg-white text-black px-6 py-2 rounded hover:bg-gray-300 transition"
+            >
+              {t("footer.send") || "Enviar"}
+            </button>
+          </form>
         </div>
       </div>
 
-      {/* Copyright */}
-      <div className="text-center text-xs opacity-60 mt-8">
-        © {new Date().getFullYear()} Fundación Ejemplo. {t("footer.rights")}
+      {/* Navegación inferior */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm border-t border-white border-opacity-10 pt-10">
+        <div>
+          <ul className="flex items-center md:justify-start justify-center gap-4">
+            <li><a href="#about-us" className="hover:underline "onClick={handleScrollToSection}>{t("navbar.about-us")}</a></li>
+            <li><a href="#projects" className="hover:underline " onClick={handleScrollToSection}>{t("navbar.projects")}</a></li>
+            <li><a href="#press" className="hover:underline " onClick={handleScrollToSection}>{t("navbar.press")}</a></li>
+          </ul>
+        </div>
+        <div className="md:col-span-2 text-center md:text-right">
+          <p className="text-xs opacity-60">
+            © {new Date().getFullYear()} Fundación Narts. {t("footer.rights")}
+          </p>
+        </div>
       </div>
     </footer>
   );

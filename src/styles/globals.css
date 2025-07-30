@@ -11,15 +11,19 @@
   --color-text-secondary: #6A6A6A;
 
   /* Colores destacados */
-  --color-accent: #8B4C55;
-  --color-accent-hover: #733942;
+   --color-accent: #F5E6CC;
+  --color-accent-hover: #E5D5BA;
 
   /* Colores secundarios / neutros */
   --color-secondary: #BCC7B3;
   --color-muted: #F1F0EB;
   --color-border: #D8D8D8;
+
+
+ 
 }
-html {
+html, body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -31,6 +35,11 @@ nav, footer {
   font-family: var(--font-ui);
 }
 @layer utilities {
+  
+.scroll-offset {
+  scroll-margin-top: 80px;
+}
+
   /* Backs */
   .bg-background {
     background-color: var(--color-background);
@@ -64,5 +73,19 @@ nav, footer {
     border-color: var(--color-border);
   }
 
+.custom-pagination .swiper-pagination-bullet {
+  background-color: var(--color-secondary) !important;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-text-primary) !important; 
+}
+ 
 
 }

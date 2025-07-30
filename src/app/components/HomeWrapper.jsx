@@ -6,7 +6,7 @@ import { AboutUs } from "./AboutUs";
 import { Projects } from "./Projects";
 import { Gallery } from "./Gallery";
 import { Press } from "./Press";
-import { Contact } from "./Contact";
+import { TeamsSections } from "./TeamsSections";
 
 
 export default function HomeWrapper() {
@@ -14,10 +14,11 @@ export default function HomeWrapper() {
     <>    
       <Header />
       <AboutUs />
+      <TeamsSections />
       <Projects />
       <Gallery />
       <Press />
-      <Contact />
+      
     </>
   );
 }

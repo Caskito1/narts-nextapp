@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
+import scrollIntoView from "smooth-scroll-into-view-if-needed";
 import { useLanguage } from "@/context/LanguageContext";
 
 
@@ -9,15 +10,25 @@ export default function Navbar() {
   const { t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
 
-  
 useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 20);
+  };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      scrollIntoView(section, {
+        behavior: "smooth",
+        block: "start",
+        scrollMode: "if-needed",
+      });
+    }
+  };
 
 
   const menuItems = [
@@ -25,7 +36,7 @@ useEffect(() => {
     { label: "projects", section: "projects" },
     { label: "gallery", section: "gallery" },
     { label: "press", section: "press" },
-    { label: "contact", section: "contact" },
+ 
   ];
 
   return (
@@ -40,15 +51,7 @@ useEffect(() => {
           <a
             key={index}
             className="hover:underline cursor-pointer"
-           
-onClick={() => {
-    const section = document.getElementById(item.section);
-    if (section) {
-      const yOffset = -60;
-      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }
-}}
+            onClick={() => {handleScrollToSection(item.section)}}
           >
             {t(`navbar.${item.label}`)}
           </a>

@@ -12,8 +12,33 @@
   "AboutUs": {
     "title": "About us"
   },
-  "Proyects": {
-    "title": "Our Proyects"
+   "TeamsSections": {
+    "title": "Us"
+  },
+  "Projects": {
+    "title": "Our Projects",
+    "projectCards": {
+      "project1": {
+        "title": "Project 1",
+        "shortDescription": "Short description"
+      },
+      "project2": {
+        "title": "Festival Noir",
+        "shortDescription": "Short description"
+      },
+      "project3": {
+        "title": "Proyecto 3",
+        "shortDescription": "Short description"
+      },
+      "project4": {
+        "title": "Proyecto 4",
+        "shortDescription": "Short description"
+      },
+      "project5": {
+        "title": "Proyecto 5",
+        "shortDescription": "Short description"
+      }
+    }
   },
   "Gallery": {
     "title": "Photo Gallery"
