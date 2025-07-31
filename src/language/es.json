@@ -47,7 +47,39 @@
     "title": "Galería de fotos"
   },
   "Press": {
-    "title": "Prensa"
+    "title": "Prensa",
+    "subtitle": "Notas, coberturas y publicaciones sobre nuestro trabajo en el territorio.",
+    "pressCard" : {
+      "press1": {
+        "title": "Título1",
+        "description": "Descripción1",
+        "button": "Ver Nota"
+        
+      },
+      "press2": {
+        "title": "Título2",
+        "description": "Descripción2",
+        "button": "Ver Nota"
+        
+      },
+      "press3": {
+        "title": "Título3",
+        "description": "Descripción3",
+        "button": "Ver Nota"
+       
+      },
+      "press4": {
+        "title": "Título4",
+        "description": "Descripción4",
+        "button": "Ver Nota"
+       
+      },
+      "press5": {
+        "title": "Título5",
+        "description": "Descripción5",
+        "button": "Ver Nota"
+      }
+    }
   },
   "Contact": {
     "title": "Contacto"
