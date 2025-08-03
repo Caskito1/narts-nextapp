@@ -37,7 +37,7 @@ export const Press = () => {
   const { t } = useLanguage();
   return (
     <section
-      className="h-screen flex items-center justify-center bg-background text-text-primary"
+      className="min-h-[100dvh] flex flex-col md:flex-row  items-center justify-center bg-background text-text-primary"
       id="press"
     >
       {/* Columna Izquierda - Frase y título */}
@@ -60,7 +60,7 @@ export const Press = () => {
             return (
               <div
                 key={item.id}
-                className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-md transform transition-transform hover:scale-[1.02] hover:shadow-lg h-28 "
+                className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-md transform transition-transform hover:scale-[1.02] hover:shadow-lg md:h-28 h-52 "
               >
                 <img
                   src={item.img}

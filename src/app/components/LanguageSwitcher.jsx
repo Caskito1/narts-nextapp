@@ -3,17 +3,21 @@
 import { Switch } from "@headlessui/react";
 import { useLanguage } from "@/context/LanguageContext";
 
-export default function LanguageSwitch() {
+export default function LanguageSwitch({ isScrolled }) {
   const { language, switchLanguage } = useLanguage();
   const isEnglish = language === "en";
+
+  const baseStyles = isScrolled
+    ? "bg-white text-black border border-black"
+    : "bg-transparent text-white border border-white";
+
+  const circleStyles = isScrolled ? "bg-black" : "bg-white";
 
   return (
     <Switch
       checked={isEnglish}
       onChange={switchLanguage}
-      className={`relative inline-flex items-center h-8 w-16 rounded-full transition-colors duration-200 ${
-        isEnglish ? "bg-white text-black" : "bg-gray-600 text-white"
-      }`}
+      className={`relative inline-flex items-center h-8 w-16 rounded-full transition-colors duration-200 ${baseStyles}`}
     >
       {/* Texto centrado con opacidad según idioma */}
       <div className="absolute inset-0 flex items-center justify-center text-xs font-medium">
@@ -23,8 +27,8 @@ export default function LanguageSwitch() {
 
       {/* Círculo animado */}
       <span
-        className={`inline-block h-6 w-6 transform rounded-full bg-black transition-transform duration-200 ${
-          isEnglish ? "translate-x-9" : "translate-x-1"
+        className={`inline-block h-5 w-5 transform rounded-full transition-transform duration-200 ${circleStyles} ${
+          isEnglish ? "translate-x-9.5" : "translate-x-1"
         }`}
       />
     </Switch>
