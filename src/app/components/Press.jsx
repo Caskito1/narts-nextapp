@@ -1,4 +1,5 @@
 import { useLanguage } from "@/context/LanguageContext";
+import { ChevronRight } from "lucide-react";
 import React from "react";
 
 const pressData = [
@@ -76,15 +77,16 @@ export const Press = () => {
                       {data.description}
                     </p>
                   </div>
-                  <div className="mt-1">
+                  <div className="mt-1 flex items-center gap-1 group transition-transform duration-200 hover:scale-105 origin-left">
                     <a
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-accent hover:underline font-medium text-xs"
+                      className="text-text-secondary font-medium text-xs uppercase font-ui "
                     >
                       {data.button}
                     </a>
+                    <ChevronRight className="w-4 h-4 " />
                   </div>
                 </div>
               </div>

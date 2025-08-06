@@ -8,14 +8,14 @@ const languages = { en, es };
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState("es");
+  const [language, setLanguage] = useState("en");
 
   const t = (key) => {
     const keys = key.split(".");
     return keys.reduce((obj, k) => (obj ? obj[k] : ""), languages[language]);
   };
 
-  const switchLanguage = () => setLanguage((prev) => (prev === "es" ? "en" : "es"));
+  const switchLanguage = () => setLanguage((prev) => (prev === "en" ? "es" : "en"));
 
   return (
     <LanguageContext.Provider value={{ language, switchLanguage, t }}>

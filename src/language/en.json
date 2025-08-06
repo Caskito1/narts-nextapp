@@ -9,51 +9,162 @@
   "header": {
     "title": "“Culture is not a legacy; it is a living language, a shared struggle, and a power for the future.”"
   },
+  
   "AboutUs": {
-    "title": "About us"
-  },
-   "TeamsSections": {
-    "title": "Us"
-  },
-  "Projects": {
-    "title": "Our Projects",
-    "projectCards": {
-      "project1": {
-        "title": "Project 1",
-        "shortDescription": "Short description"
+    "title": "About Us",
+    "quote": "Art is not what you see, but what you make others see.",
+    "quoteSignature": "Marcel Duchamp",
+
+    "tabs": {
+      "narts": "Narts",
+      "mision": "Mission",
+      "vision": "Objectives",
+      "us": "Our Team"
+    },
+
+    "content": {
+      "narts": {
+        "title": "Narts",
+        "paragraphs": [
+          "Impulsamos la cultura como un acto colectivo de transformación.",
+          "Desde el cine, la música, el pensamiento, la moda, la literatura, el arte y sus intersecciones, generamos espacios donde la creación se convierte en lenguaje para habitar críticamente el presente.",
+          "A través de programas colaborativos, educación, residencias y acciones públicas, buscamos provocar, cuidar y reimaginar lo común."
+        ]
+    },
+      "mision": {
+        "title": "Mission",
+        "paragraphs": [
+          "We promote culture as a collective act of transformation.",
+          "Through cinema, music, thought, fashion, literature, art, and their intersections, we create spaces where creation becomes a language to critically inhabit the present.",
+          "Through collaborative programs, education, residencies, and public actions, we aim to provoke, care for, and reimagine the commons."
+        ]
       },
-      "project2": {
-        "title": "Festival Noir",
-        "shortDescription": "Short description"
-      },
-      "project3": {
-        "title": "Proyecto 3",
-        "shortDescription": "Short description"
-      },
-      "project4": {
-        "title": "Proyecto 4",
-        "shortDescription": "Short description"
-      },
-      "project5": {
-        "title": "Proyecto 5",
-        "shortDescription": "Short description"
+      "vision": {
+        "title": "Objectives",
+        "paragraphs": [
+          "At NARTS, we create spaces where culture overflows, is debated, and is lived.",
+          "To be a cultural hub of regional and international reference, where creation doesn’t embellish reality but challenges it, listens to it, and transforms it. At NARTS, we imagine a culture that isn’t inherited intact: it is reinvented, shared, and lived as a political, poetic, and regenerative force.",
+          "More than exhibiting, we connect; more than preserving, we reimagine. We believe in the collective, the contradictory, and what has yet to take shape."
+        ]
       }
     }
   },
+
+
+  "TeamsSections": {
+    "title": "Our Team",
+    "quote": "Art is not what you see, but what you make others see.",
+    "quoteSignature": "Marcel Duchamp",
+    "seeDescription": "View profile of",
+    "seeMore": "See more",
+    "seeLess": "See less",
+    "card1": {
+      "name": "Alicia Escardó",
+      "position": "Role at Narts",
+      "description": [
+        "Alicia Escardó is a Uruguayan writer who has published her books in Uruguay and Argentina. Her work includes young adult novels, a short story collection, a historical novel, and noir fiction.",
+        "She has received several awards for her work, including first prize in the Horacio Quiroga International Contest for 'El poder invisible' and the MEC Narrative Prize for 'Nayla y el misterio XO' and 'La muerte de Pan', as well as nominations for the Onetti Prize, Bartolomé Hidalgo Prize, and Narradores de Banda Oriental. As a cultural manager, she has organized events such as 'Semana Negra Uy', the International Crime Novel Meeting, book fairs, and crime story contests, among others.",
+        "She hosts a weekly crime fiction program, 'La columna negra'. She coordinates cultural spaces such as Espacio CRA in La Floresta and Guarida Casa de Libros in Montevideo. She is vice president of the Narts Foundation, which since 2023 has organized cultural events, presentations, and various activities related to Ibero-American art and culture, including the Noir Week Miami Festival, which, together with the Miami Book Fair, showcases noir genre writers and other related artistic activities.",
+        "She studied at UDELAR (Faculty of Engineering) and worked for years as an IT consultant, specializing in e-learning, educational content, and multimedia course scripting. She lived in Spain for six years, where she studied at Pompeu Fabra University (Barcelona) and UNED (Madrid)."
+      ]
+    },
+    "card2": {
+      "name": "Mariella Bruno",
+      "position": "Role at Narts",
+      "description": [
+        "Architect, cultural manager, and communicator, Mariella Bruno is the current deputy director of the NARTS Foundation. Her education and career combine design, art, architecture, and social commitment, with an integrative vision that drives transformative projects both locally and internationally.",
+        "A graduate of the Faculty of Architecture at the University of the Republic (Uruguay), she holds a Master's in Cultural Management and a Master's in Habitat and Housing, allowing her to approach urban and community development from a deep, interdisciplinary, and human perspective.",
+        "Since 2007, she has been president and co-founder of Ch2 Design in Miami, where she designs and develops unique residential spaces with a sensitive, functional, and aesthetic approach.",
+        "She has led major social and academic initiatives in Uruguay, such as being part of the 'Community Architect' program of the Society of Architects of Uruguay, co-founding the NGO AIDESUR, and serving as general coordinator of the Post-Construction SIAV Program, focused on improving housing in vulnerable contexts.",
+        "In the artistic and cultural field, she was Art Director of the Iberoamerican Film Festival Miami, and currently hosts the radio and podcast program 'Arte a la Carta'. She also collaborates with the cultural publication Letra Urbana, reflecting on art, design, and society.",
+        "Her leadership at the NARTS Foundation is based on a broad and committed perspective that connects architecture, art, community, and critical thinking to build more just and inspiring futures."
+      ]
+    }
+  },
+
+
+
+ "Projects": {
+  "title": "Our Projects",
+  "projectCards": {
+    "project1": {
+      "title": "Noir Week",
+      "shortDescription": "Literary festival of the noir genre.",
+      "longDescription": "One of Narts' flagship initiatives. It's a literary celebration with a cultural and social focus. More than an event, it’s a meeting platform where noir narrative connects communities and gives voice to complex realities. Gatherings, roundtables, and debates where various aspects of this popular literary genre are explored, along with reflections on real criminality, violence, marginalization, and their links to literature and art.",
+      "webSiteProject": "https://www.noirweekmiami.com"
+    },
+    "project2": {
+      "title": "Ellas crean",
+      "shortDescription": "Writing residency for women authors.",
+      "longDescription": "A space for writing, research, and creation that culminates in direct feedback to the community."
+    },
+    "project3": {
+      "title": "Letras con conciencia",
+      "shortDescription": "Books and stories for children and youth.",
+      "longDescription": "Workshops for children, youth, and adults that address complex social issues through reading and writing, activating the word as a tool for resilience and critical thinking."
+    },
+    "project4": {
+      "title": "Diálogo en colores",
+      "shortDescription": "Visual arts and environmental engagement.",
+      "longDescription": "This project seeks to make visible, celebrate, and care for the migration stories that inhabit Miami. Through workshops, oral archives, participatory art, and collective creation processes, we open spaces where migrant communities can tell their stories with dignity, beauty, and the power of their journeys."
+    },
+    "project5": {
+      "title": "Raíces en tránsito",
+      "shortDescription": "Immigration and critical reflection through art.",
+      "longDescription": "A series of projects in which visual arts and care for the planet intertwine. Artists, neighbors, youth, and educators work together in processes that reflect on the environment, raise ecological awareness, and build new ways of relating to the world around us."
+    }
+  }
+},
+
   "Gallery": {
     "title": "Photo Gallery"
   },
-  "Press": {
-    "title": "Press"
-  },
+ "Press": {
+  "title": "Press",
+  "subtitle": "Articles, coverage, and publications about our work in the field.",
+  "pressCard": {
+    "press1": {
+      "title": "Title1",
+      "description": "Description1",
+      "button": "Read Article"
+    },
+    "press2": {
+      "title": "Title2",
+      "description": "Description2",
+      "button": "Read Article"
+    },
+    "press3": {
+      "title": "Title3",
+      "description": "Description3",
+      "button": "Read Article"
+    },
+    "press4": {
+      "title": "Title4",
+      "description": "Description4",
+      "button": "Read Article"
+    },
+    "press5": {
+      "title": "Title5",
+      "description": "Description5",
+      "button": "Read Article"
+    }
+  }
+},
   "Contact": {
     "title": "Contact"
   },
 
   "footer": {
-    "description": "Driving social change through culture and education.",
-    "links": "Links",
-    "contact": "Contact",
-    "rights": "All rights reserved."
-  }
+  "description": "Driving social change through culture and education.",
+  "contact": "Contact",
+  "rights": "Narts Foundation. All rights reserved.",
+  "contactFormTitle": "Contact Us",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "send": "Send",
+  "namePlaceholder": "John Smith",
+  "emailPlaceholder": "john@example.com",
+  "messagePlaceholder": "Write your message here..."
+}
 }

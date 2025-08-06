@@ -9,43 +9,132 @@
   "header": {
     "title": "“La cultura no es legado, es lenguaje vivo, conflicto compartido y potencia de futuro.”"
   },
-   "AboutUs": {
-    "title": "Quienes somos"
+  
+"AboutUs": {
+  "title": "Quiénes somos",
+  "quote": "El arte no es lo que se ve, sino lo que hace que otros vean.",
+  "quoteSignature": "Marcel Duchamp",
+
+  "tabs": {
+    "narts": "Narts",
+    "mision": "Misión",
+    "vision": "Objetivos",
+    "us": "Nosotras"
   },
+
+  "content": {
+    "narts": {
+      "title": "Narts",
+      "paragraphs": [
+        "Impulsamos la cultura como un acto colectivo de transformación.",
+        "Desde el cine, la música, el pensamiento, la moda, la literatura, el arte y sus intersecciones, generamos espacios donde la creación se convierte en lenguaje para habitar críticamente el presente.",
+        "A través de programas colaborativos, educación, residencias y acciones públicas, buscamos provocar, cuidar y reimaginar lo común."
+      ]
+    },
+    "mision": {
+      "title": "Misión",
+      "paragraphs": [
+        "Impulsamos la cultura como un acto colectivo de transformación.",
+        "Desde el cine, la música, el pensamiento, la moda, la literatura, el arte y sus intersecciones, generamos espacios donde la creación se convierte en lenguaje para habitar críticamente el presente.",
+        "A través de programas colaborativos, educación, residencias y acciones públicas, buscamos provocar, cuidar y reimaginar lo común."
+      ]
+    },
+    "vision": {
+      "title": "Objetivos",
+      "paragraphs": [
+        "En NARTS creamos espacios donde la cultura se desborda, se discute y se vive.",
+        "Ser un nodo cultural de referencia regional e internacional, donde la creación no adorna la realidad, sino que la tensiona, la escucha y la transforma. En NARTS, imaginamos una cultura que no se hereda intacta: se reinventa, se comparte y se vive como fuerza política, poética y regenerativa.",
+        "Más que exhibir, conectamos; más que conservar, reimaginamos. Creemos en lo colectivo, lo contradictorio y lo que aún no tiene forma."
+      ]
+    }
+  }
+},
    "TeamsSections": {
-    "title": "Nuestro equipo",
-    "subtitle": "Conocé a nuestras directoras"
+    "title": "Sobre Nosotras",
+    "quote": "El arte no es lo que se ve, sino lo que hace que otros vean.",
+    "quoteSignature": "Marcel Duchamp",
+     "seeDescription": "Ver perfil de",
+    "seeMore": "Ver más",
+    "seeLess": "Ver menos",
+    "card1": {
+      "name":"Alicia Escardó",
+      "position":"Rol en Narts",
+      "description": [
+        "Alicia Escardó es una escritora uruguaya, que ha publicado sus libros en Uruguay y Argentina. Su narrativa incluye novelas juveniles, un libro de relatos, una novela histórica y novelas noir.",
+        "Recibió varios premios por sus obras, entre ellos el primer premio en el Concurso Internacional Horacio Quiroga para “El poder invisible” y el Premio de Narrativa del MEC para “Nayla y el misterio XO” y “La muerte de Pan”, y nominaciones en el Premio Onetti, Bartolomé Hidalgo, y Narradores de Banda Oriental. Como gestora cultural ha organizado eventos culturales como “Semana Negra Uy”, Encuentro Internacional de novela criminal, Ferias del Libro, concursos de relatos policiales, entre otros.",
+        "Tiene un programa semanal de novela criminal, “La columna negra”. Coordina espacios culturales como Espacio CRA en La Floresta, y Guarida Casa de Libros en Montevideo. Es vicepresidenta de Narts Foundation, que desde 2023 gestiona eventos culturales, presentaciones, y distintas actividades relacionadas con el arte y la cultura iberoamericana, entre ellos el Festival Noir Week Miami, que junto a Miami Book Fair presenta escritores de género negro y otras actividades artísticas relacionadas.",
+        "Estudió en UDELAR (Facultad de Ingeniería) y trabajó durante años como consultora en informática, especializada en elearning, contenidos educativos y guiones para cursos multimedia. Vivió seis años en España, donde ha cursado estudios en la Universidad Pompeu Fabra (Barcelona) y UNED (Madrid)."
+      ]
+     },
+    "card2": {
+      "name":"Mariella Bruno",
+      "position":"Rol en Narts",
+      "description": [
+        "Arquitecta, gestora cultural y comunicadora, Mariella Bruno es la actual sub-directora de la Fundación NARTS. Su formación y trayectoria combinan diseño, arte, arquitectura y compromiso social, con una visión integradora que impulsa proyectos transformadores tanto a nivel local como internacional.",
+        "Egresada de la Facultad de Arquitectura de la Universidad de la República (Uruguay), cuenta con una Maestría en Gestión Cultural y una Maestría en Hábitat y Vivienda, lo que le permite abordar el desarrollo urbano y comunitario desde una mirada profunda, interdisciplinaria y humana.",
+        "Desde 2007 es presidenta y cofundadora de Ch2 Design en Miami, donde diseña y desarrolla espacios residenciales únicos con un enfoque sensible, funcional y estético.",
+        "Ha liderado importantes iniciativas sociales y académicas en Uruguay, como integrante del programa “Arquitecto de la Comunidad” de la Sociedad de Arquitectos del Uruguay, cofundadora de la ONG AIDESUR y coordinadora general del Programa Post Obra SIAV, centrado en la mejora del hábitat en contextos vulnerables.",
+        "En el campo artístico y cultural, fue Directora de Arte del Iberoamerican Film Festival Miami, y actualmente conduce el programa radial y pódcast “Arte a la Carta”. Además, colabora con la publicación cultural Letra Urbana, desde donde reflexiona sobre arte, diseño y sociedad.",
+        "Su liderazgo en la Fundación NARTS se basa en una perspectiva amplia y comprometida, que vincula arquitectura, arte, comunidad y pensamiento crítico para construir futuros más justos e inspiradores."
+      ]
+    }
   },
    
   "Projects": {
     "title": "Nuestros Proyectos",
     "projectCards": {
       "project1": {
-        "title": "Proyecto 1",
-        "shortDescription": "Descripción breve del proyecto."
+       "title": "Noir Week",
+        "shortDescription": "Festival literario de género negro.",
+        "longDescription": "Una de las iniciativas emblemáticas de Narts.  Es una celebración literaria con enfoque cultural y social. Más que un evento, es una plataforma de encuentro donde la narrativa noir conecta comunidades y da voz a realidades complejas. Tertulias, mesas redondas y debates en los cuales se exponen diversos aspectos de este popular género literario y la reflexión sobre la criminalidad real, la violencia, y marginación y sus vínculos con la literatura y el arte.",
+        "webSiteProject": "https://www.noirweekmiami.com"
       },
       "project2": {
-        "title": "Festival Noir",
-        "shortDescription": "Festival literario de género negro."
+        "title": "Ellas crean",
+        "shortDescription": "Residencia de escritura para autoras.",
+        "longDescription": "Un espacio de escritura investigación y creación que culmina en una devolucio’n directa a la comunidad."
       },
       "project3": {
-        "title": "Proyecto 3",
-        "shortDescription": "Descripción breve del proyecto."
+        "title": "Letras con conciencia",
+        "shortDescription": "Libros e historias para niños y jóvenes.",
+          "longDescription": "Talleres para niños, jóvenes y adultos donde se abordan temas sociales complejos a través de la lectura y la escritura, activando la palabra como herramienta de resilencia y pensamiento crítico"
       },
       "project4": {
-        "title": "Proyecto 4",
-        "shortDescription": "Descripción breve del proyecto."
+        "title": "Diálogo en colores",
+        "shortDescription": "Artes plásticas y compromiso con el medio ambiente.",
+          "longDescription": "Este proyecto busca visibilizar, celebrar y cuidar las historias de migraci+on que habitan Miami. A través de talleres, archivo oral, arte participativo y procesos de creación colectiva, abrimos espacios donde las comunidades migrantes pueden narrarse desde la dignidad, la belleza y la potencia de sus recorridos."
       },
       "project5": {
-        "title": "Proyecto 5",
-        "shortDescription": "Descripción breve del proyecto."
+        "title": "Raíces en tránsito",
+        "shortDescription": "Inmigración y reflexión crítica a través del arte.",
+          "longDescription": "Una serie de proyectos en los que las artes visuales y el cuidado del planeta se entrelazan. Artistas, ecinos, jóvenes y educadores trabajan juntos en procesos que reflexionan sobre el entorno, generan conciencia ecológica y construyen nueva formas de relación con lo que nos rodea. "
       }
     }
   },
 
   "Gallery": {
-    "title": "Galería de fotos"
+    "slide1": {
+       "title": "Explora nuestra galería 1",
+       "description": "Una selección de imágenes que reflejan el espíritu de nuestro proyecto."
+    },
+    "slide2": {
+       "title": "Explora nuestra galería 2",
+       "description": "Una selección de imágenes que reflejan el espíritu de nuestro proyecto."
+    },
+    "slide3": {
+       "title": "Explora nuestra galería 3",
+       "description": "Una selección de imágenes que reflejan el espíritu de nuestro proyecto."
+    },
+    "slide4": {
+       "title": "Explora nuestra galería 4",
+       "description": "Una selección de imágenes que reflejan el espíritu de nuestro proyecto."
+    },
+    "slide5": {
+       "title": "Explora nuestra galería 5",
+       "description": "Una selección de imágenes que reflejan el espíritu de nuestro proyecto."
+    }
   },
+
   "Press": {
     "title": "Prensa",
     "subtitle": "Notas, coberturas y publicaciones sobre nuestro trabajo en el territorio.",
@@ -86,8 +175,15 @@
   },
   "footer": {
     "description": "Impulsando el cambio social a través de la cultura y la educación.",
-    "links": "Enlaces",
     "contact": "Contacto",
-    "rights": "Todos los derechos reservados."
+    "rights": "Fundación Narts. Todos los derechos reservados.",
+    "contactFormTitle": "Contáctanos",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "namePlaceholder": "Juan Pérez",
+    "emailPlaceholder": "juan@example.com",
+    "messagePlaceholder": "Escribí tu mensaje aquí..."
   }
 }

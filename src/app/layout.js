@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" className={`${inter.variable} ${merriweather.variable}`}>
+    <html lang="en" className={`${inter.variable} ${merriweather.variable}`}>
       <body className="scroll-smooth">
         <Providers>{children}</Providers>
       </body>

@@ -36,6 +36,7 @@ export default function Navbar() {
     { label: "about-us", section: "about-us" },
     { label: "projects", section: "projects" },
     { label: "press", section: "press" },
+    { label: "contact", section: "contact" },
   ];
 
   return (
@@ -51,11 +52,11 @@ export default function Navbar() {
         <div className="text-xl font-bold">LOGO</div>
 
         {/* Desktop menu */}
-        <div className="hidden md:flex gap-6 items-center">
+        <div className="hidden md:flex gap-6 items-center text-lg ">
           {menuItems.map((item, index) => (
             <a
               key={index}
-              className="hover:underline cursor-pointer"
+              className="cursor-pointer relative  transition-all duration-300 border-b-2 border-transparent hover:border-secondary "
               onClick={() => handleScrollToSection(item.section)}
             >
               {t(`navbar.${item.label}`)}

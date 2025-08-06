@@ -19,7 +19,10 @@
   --color-muted: #F1F0EB;
   --color-border: #D8D8D8;
 
-
+  --color-pill-border: #A3B49B;     /* borde pill inactivo */
+  --color-pill-bg-active: #8FA88A;  /* fondo pill activo */
+  --color-pill-text: #333333;       /* texto activo */
+  --color-pill-text-muted: #6A6A6A; /* texto inactivo */
  
 }
 html, body {
@@ -39,7 +42,10 @@ nav, footer {
 .scroll-offset {
   scroll-margin-top: 80px;
 }
-
+/*Fonts */
+ .font-ui {
+    font-family: var(--font-ui);
+  }
   /* Backs */
   .bg-background {
     background-color: var(--color-background);
@@ -62,19 +68,29 @@ nav, footer {
   .text-text-secondary {
     color: var(--color-text-secondary);
   }
+
   .text-accent {
     color: var(--color-accent);
   }
+
+
   .hover\:text-accent-hover:hover {
     color: var(--color-accent-hover);
   }
+  .hover\:border-secondary:hover {
+  border-color: var(--color-secondary);
+}
 
   .border-color {
     border-color: var(--color-border);
   }
 
+  .border-color-secundary {
+    border-color: var(--color-text-secondary);
+  }
+
 .custom-pagination .swiper-pagination-bullet {
-  background-color: var(--color-secondary) !important;
+  background-color:  #6A6A6A !important;
   opacity: 1;
   width: 10px;
   height: 10px;
@@ -84,8 +100,21 @@ nav, footer {
 }
 
 .custom-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-text-primary) !important; 
+  background-color:   #8FA88A !important; 
 }
- 
+
+/* Pills */
+.border-pill {
+  border: 2px solid var(--color-pill-border);
+}
+.bg-pill-active {
+  background-color: var(--color-pill-bg-active);
+}
+.text-pill {
+  color: var(--color-pill-text);
+}
+.text-pill-muted {
+  color: var(--color-pill-text-muted);
+}
 
 }

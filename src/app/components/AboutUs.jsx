@@ -1,38 +1,17 @@
 "use client";
 
+import { useLanguage } from "@/context/LanguageContext";
 import { useState } from "react";
 import scrollIntoView from "smooth-scroll-into-view-if-needed";
+import { AccordionItem } from "./AccordionItem";
 
 export const AboutUs = () => {
-  const [selected, setSelected] = useState("mision");
-
-  const contenido = {
-    mision: {
-      titulo: "Misión",
-      texto: (
-        <>
-          <p>Impulsamos la cultura como un acto colectivo de transformación.</p>
-          <p>
-           Desde el cine, la música, el pensamiento, la moda, la literatura, el arte y sus intersecciones, generamos espacios donde la creación se convierte en lenguaje para habitar criticamente el presente.
-          </p>
-          <p>A traves de programs colaborativos, educación, residencias y acciones públicas, buscamos provocar, cuida y re-imaginar lo común.</p>
-        </>
-      ),
-    },
-    vision: {
-      titulo: "Objetivos",
-      texto: (
-        <>
-          <p>En NARTS creamos espacios donde la cultura se desborda, se discute y se vive.</p>
-          <p>Ser un nodo cultural de referencia regional e internacional, donde la creación no adorna la realidad, sino que la tensiona, la escucha y la transforma. En NARTS, imaginamos una cultura que no se hereda intacta: se reinventa, se comprate y se vive como fuerza política, poética y regenerativa.</p>
-          <p>Más que exhibir, conectamos; más que conservar, reimaginamos. Creemos en lo colectivo, lo contradictorio y lo que aún no tiene forma</p>
-        </>
-      ),
-    },
-  };
+  const [selected, setSelected] = useState("narts");
+  const { t } = useLanguage();
+  
 
    const handleTabClick = (key) => {
-    if (key === "nosotras") {
+    if (key === "us") {
       const section = document.getElementById("teams");
       if (section) {
         scrollIntoView(section, {
@@ -45,47 +24,81 @@ export const AboutUs = () => {
       setSelected(key);
     }
   };
+  const selectedContent = t("AboutUs.content")[selected];
   return (
-    <section id="about-us" className="flex flex-col md:flex-row min-h-[100vh]">
-      {/* Columna Izquierda - Frase y título */}
-      <div className="w-full md:w-1/2 bg-background flex flex-col justify-center md:items-start items-center p-10 md:p-20 space-y-6 ">
-        <h2 className="text-4xl md:text-6xl font-bold text-text-primary font-serif ">
-          About Us
+ <section id="about-us" className="flex flex-col md:flex-row md:min-h-[100vh]">
+      {/* Columna Izquierda */}
+      <div className="w-full md:w-1/2 bg-background  flex flex-col justify-center md:items-start items-center px-10 pt-10  md:p-20 space-y-6">
+        <h2 className="text-4xl md:text-6xl font-bold text-text-primary ">
+          {t("AboutUs.title")}
         </h2>
         <p className="md:text-2xl text-base italic text-text-secondary leading-relaxed max-w-xl md:text-start text-center">
-          “El arte no es lo que se ve, sino lo que hace que otros vean.”
+          “{t("AboutUs.quote")}”
         </p>
-        <p className="text-text-secondary md:text-lg text-base">— Marcel Duchamp</p>
+        <p className="text-text-secondary md:text-lg text-base">— {t("AboutUs.quoteSignature")}</p>
       </div>
 
-      {/* Columna Derecha - Tabs + contenido */}
-      <div className=" relative w-full md:w-1/2 bg-background-alt flex flex-col justify-center md:items-start items-center p-10 md:p-20 space-y-8 min-h-[100vh] ">
-      {/* Tabs */}
-        <div className="flex gap-4 font-semibold md:items-start  mt-12 absolute top-4  ">
-          {["mision", "vision", "nosotras"].map((key) => (
-            <button
-              key={key}
-              onClick={() => handleTabClick(key)}
-              className={`py-2 px-2 md:text-xl text-base transition-all duration-300 cursor-pointer ${
-                selected === key
-                  ? "border-accent text-text-primary border-b-2 "
-                  : "border-transparent text-text-secondary hover:text-text-primary hover:border-muted"
-              }`}
-            >
-              {key === "nosotras" ? "Nosotras" : contenido[key].titulo}
-            </button>
+      {/* Columna Derecha */}
+      <div className="relative w-full md:w-1/2 bg-[#FAF9F6] sm:bg-[#BCC7B3] flex flex-col sm:justify-center md:items-start items-center p-10 md:p-20 space-y-8 md:min-h-[100vh]">
+       
+      {/* Tabs para mobile */}
+<div className="w-full md:hidden mt-2  space-y-2">
+  {["narts", "mision", "vision", "us"].map((key, index, arr) => (
+    <AccordionItem
+      key={key}
+      keyName={key}
+      label={t(`AboutUs.tabs.${key}`)}
+      isOpen={selected === key}
+      onClick={(clickedKey) => {
+        if (clickedKey === "us") {
+          const section = document.getElementById("teams");
+          if (section) {
+            scrollIntoView(section, {
+              behavior: "smooth",
+              block: "start",
+              scrollMode: "if-needed",
+            });
+          }
+        } else {
+         setSelected((prev) => (prev === clickedKey ? null : clickedKey));
+        }
+      }}
+      content={t("AboutUs.content")[key]}
+      isFirst={index === 0}
+      isLast={index === arr.length - 1}
+    />
+  ))}
+</div>
+
+{/* Tabs para desktop */}
+<div className="hidden md:flex gap-4 font-semibold md:items-start mt-12 absolute top-4">
+  {["narts", "mision", "vision", "us"].map((key) => (
+    <button
+      key={key}
+      onClick={() => handleTabClick(key)}
+      className={`py-2 px-2 md:text-xl text-base transition-all duration-300 cursor-pointer ${
+        selected === key
+          ? "border-accent text-text-primary border-b-2"
+          : "border-transparent text-text-secondary hover:text-text-primary hover:border-muted"
+      }`}
+    >
+      {t(`AboutUs.tabs.${key}`)}
+    </button>
+  ))}
+</div>
+      <div className="hidden md:block">
+        {/* Contenido dinámico */}
+        <h2 className="text-text-primary text-3xl mt-0 pb-8">
+          {selectedContent?.title}
+        </h2>
+        <div className="space-y-4 text-text-secondary leading-relaxed md:text-start text-center md:text-base text-sm max-w-[700px]">
+          {selectedContent?.paragraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
           ))}
         </div>
-
-        {/* Contenido dinámico */}
-        <h2 className="text-text-primary text-3xl md:mt-0 mt-16  ">
-          {contenido[selected].titulo}
-        </h2>
-        <div className="space-y-4 text-text-secondary leading-relaxed md:text-start text-center md:text-base text-sm">
-          {contenido[selected].texto}
-        </div>
+      </div>
       </div>
     </section>
-    
   );
 };
+    

@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
-import { ChevronUp, X } from "lucide-react";
+import { ChevronDown,  ChevronUp, X } from "lucide-react";
 import scrollIntoView from "smooth-scroll-into-view-if-needed";
 
 export const TeamCard = ({
-  isActive,
+   isActive,
   isCollapsed,
   onClick,
   onClose,
@@ -11,6 +11,9 @@ export const TeamCard = ({
   name,
   role,
   description,
+  seeMoreText,
+  seeLessText,
+  seeProfileText,
 }) => {
   const [isMobile, setIsMobile] = useState(false);
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -28,13 +31,7 @@ export const TeamCard = ({
 
 const handleShowFullDescription = () => {
   setShowFullDescription(true);
-  if (cardRef.current) {
-    scrollIntoView(cardRef.current, {
-      behavior: "smooth",
-      block: "start",
-      scrollMode: "if-needed",
-    });
-  }
+ 
 };
 
 
@@ -46,9 +43,16 @@ const handleShowFullDescription = () => {
       : children;
   };
 
-  const handleCollapse = () => {
-    setShowFullDescription(false);
-  };
+ const handleCollapse = () => {
+  setShowFullDescription(false);
+  if (cardRef.current) {
+    scrollIntoView(cardRef.current, {
+      behavior: "smooth",
+      block: "start",
+      scrollMode: "if-needed",
+    });
+  }
+};
 
   return (
     <div
@@ -67,11 +71,11 @@ const handleShowFullDescription = () => {
 {isMobile && (
   <div className="flex flex-col w-full mb-4">
     <img src={image} alt={name} className="w-full h-84 object-cover" />
-    <div className="relative p-4 pb-10">
+    <div className="relative p-4 pb-4">
       <h3 className="text-xl font-bold">{name}</h3>
-      <p className="text-text-secondary mb-2">{role}</p>
+      <p className="text-text-secondary text-sm mb-2">{role}</p>
 
-      <div className="text-text-secondary space-y-3">
+      <div className="text-text-secondary space-y-3 text-sm">
         {showFullDescription
           ? description
           : getFirstParagraph(description)}
@@ -79,16 +83,21 @@ const handleShowFullDescription = () => {
 
       {!showFullDescription ? (
         <button
-          className="mt-3 text-sm text-accent underline"
+          className="text-text-secondary font-medium text-xs uppercase font-ui mt-4 font-semibold flex items-center gap-2"
          onClick={handleShowFullDescription}
         >
-          Ver más
+          {seeMoreText}
+           <ChevronDown className="w-4 h-4 "/>
         </button>
       ) : (
-      <ChevronUp 
-          className="absolute bottom-0 right-4 flex items-center text-text-secondary text-sm "
+         <button
+          className="text-text-secondary font-medium text-xs uppercase font-ui mt-4 font-semibold flex items-center gap-2"
           onClick={handleCollapse}
-        />
+        >
+          {seeLessText}
+           <ChevronUp />
+        </button>
+      
          
       )}
     </div>
@@ -127,7 +136,7 @@ const handleShowFullDescription = () => {
     className="cursor-pointer flex items-center justify-center w-full h-full"
   >
     <button className="transform md:-rotate-90 whitespace-nowrap text-text-primary tracking-wide">
-      Ver perfil de <span className="font-bold">{name}</span>
+      {seeProfileText}{" "} <span className="font-bold">{name}</span>
     </button>
   </div>
 )}
