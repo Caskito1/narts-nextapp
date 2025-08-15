@@ -36,6 +36,7 @@ export default function Navbar() {
     { label: "about-us", section: "about-us" },
     { label: "projects", section: "projects" },
     { label: "press", section: "press" },
+    { label: "partners", section: "partners" },
     { label: "contact", section: "contact" },
   ];
 

@@ -135,6 +135,15 @@ export default function Footer() {
                 {t("navbar.press")}
               </a>
             </li>
+            <li>
+              <a
+                href="#partners"
+                className="hover:underline "
+                onClick={handleScrollToSection}
+              >
+                {t("navbar.partners")}
+              </a>
+            </li>
           </ul>
         </div>
         <div className="md:col-span-2 text-center md:text-right">

@@ -4,6 +4,7 @@
     "projects": "Proyectos",
     "gallery": "Galería",
     "press": "Prensa",
+    "partners": "Socios",
     "contact": "Contacto"
   },
   "header": {
@@ -109,29 +110,31 @@
         "shortDescription": "Inmigración y reflexión crítica a través del arte.",
           "longDescription": "Una serie de proyectos en los que las artes visuales y el cuidado del planeta se entrelazan. Artistas, ecinos, jóvenes y educadores trabajan juntos en procesos que reflexionan sobre el entorno, generan conciencia ecológica y construyen nueva formas de relación con lo que nos rodea. "
       }
-    }
+    },
+    "quote": "El arte no es lo que se ve, sino lo que hace que otros vean.",
+    "quoteSignature": "Marcel Duchamp"
   },
 
   "Gallery": {
     "slide1": {
-       "title": "Explora nuestra galería 1",
-       "description": "Una selección de imágenes que reflejan el espíritu de nuestro proyecto."
+       "title": "Título Evento 01",
+       "description": "Descripción imagen 01"
     },
     "slide2": {
-       "title": "Explora nuestra galería 2",
-       "description": "Una selección de imágenes que reflejan el espíritu de nuestro proyecto."
+       "title": "Título Evento 02",
+       "description": "Descripción imagen 02"
     },
     "slide3": {
-       "title": "Explora nuestra galería 3",
-       "description": "Una selección de imágenes que reflejan el espíritu de nuestro proyecto."
+       "title": "Título Evento 03",
+       "description": "Descripción imagen 03"
     },
     "slide4": {
-       "title": "Explora nuestra galería 4",
-       "description": "Una selección de imágenes que reflejan el espíritu de nuestro proyecto."
+       "title": "Título Evento 04",
+       "description": "Descripción imagen 04"
     },
     "slide5": {
-       "title": "Explora nuestra galería 5",
-       "description": "Una selección de imágenes que reflejan el espíritu de nuestro proyecto."
+       "title": "Título Evento 05",
+       "description": "Descripción imagen 05"
     }
   },
 
@@ -169,6 +172,9 @@
         "button": "Ver Nota"
       }
     }
+  },
+   "Partners": {
+  "title": "Nuestros Socios"
   },
   "Contact": {
     "title": "Contacto"

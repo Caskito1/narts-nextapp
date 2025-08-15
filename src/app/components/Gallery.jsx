@@ -9,28 +9,23 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const slides = [
   {
     src: '/gallery/back-gallery01.webp',
-    title: 'Explora nuestra galería 1',
-    description: 'Una selección de imágenes que reflejan el espíritu de nuestro proyecto.',
+    key: 'slide1'
   },
   {
     src: '/gallery/back-gallery02.webp',
-    title: 'Conectando a través del arte',
-    description: 'Historias que inspiran, conectan y transforman.',
+    key: 'slide2'
   },
   {
     src: '/gallery/back-gallery03.webp',
-    title: 'Momentos únicos',
-    description: 'Capturas que muestran el poder de la comunidad.',
+    key: 'slide3'
   },
   {
     src: '/gallery/back-gallery04.webp',
-    title: 'Creatividad sin límites',
-    description: 'El arte como forma de expresión y cambio.',
+    key: 'slide4'
   },
   {
     src: '/gallery/back-gallery05.webp',
-    title: 'Colores que cuentan historias',
-    description: 'Una mirada visual a nuestras experiencias.',
+    key: 'slide5'
   },
 ];
 
@@ -79,17 +74,16 @@ export const Gallery = () => {
         />
 
         {/* Overlay oscuro */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10 opacity-20" />
-  {/* Overlay oscuro */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10 opacity-20"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10 opacity-40" />
+
 
         {/* Texto encima del slide */}
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-20 text-center px-4">
           <div className="text-white max-w-2xl">
             <h2 className="text-2xl md:text-5xl font-bold mb-4">
-              {slide.title}
+               {t(`Gallery.${slide.key}.title`)}
             </h2>
-            <p className="text-base md:text-lg">{slide.description}</p>
+            <p className="text-base md:text-lg"> {t(`Gallery.${slide.key}.description`)}</p>
           </div>
         </div>
       </div>

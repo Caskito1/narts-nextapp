@@ -7,6 +7,7 @@ import { Projects } from "./Projects";
 import { Gallery } from "./Gallery";
 import { Press } from "./Press";
 import { TeamsSections } from "./TeamsSections";
+import { Partners } from "./Partners";
 
 
 export default function HomeWrapper() {
@@ -18,6 +19,7 @@ export default function HomeWrapper() {
       <Projects />
       <Gallery />
       <Press />
+      <Partners />
       
     </>
   );

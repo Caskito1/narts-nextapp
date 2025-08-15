@@ -4,6 +4,7 @@
     "projects": "Projects",
     "gallery": "Gallery",
     "press": "Press",
+    "partners": "Partners",
     "contact": "Contact"
   },
   "header": {
@@ -113,12 +114,34 @@
       "shortDescription": "Immigration and critical reflection through art.",
       "longDescription": "A series of projects in which visual arts and care for the planet intertwine. Artists, neighbors, youth, and educators work together in processes that reflect on the environment, raise ecological awareness, and build new ways of relating to the world around us."
     }
-  }
+  },
+ "quote": "Art is not what you see, but what you make others see.",
+  "quoteSignature": "Marcel Duchamp"
 },
 
   "Gallery": {
-    "title": "Photo Gallery"
+    "slide1": {
+       "title": "Title Event 01",
+       "description": "Description image 01"
+    },
+    "slide2": {
+       "title": "Title Event 02",
+       "description": "Description image 02"
+    },
+    "slide3": {
+       "title": "Title Event 03",
+       "description": "Description image 03"
+    },
+    "slide4": {
+       "title": "Title Event 04",
+       "description": "Description image 04"
+    },
+    "slide5": {
+       "title": "Title Event 05",
+       "description": "Description image 05"
+    }
   },
+
  "Press": {
   "title": "Press",
   "subtitle": "Articles, coverage, and publications about our work in the field.",
@@ -150,6 +173,12 @@
     }
   }
 },
+
+
+ "Partners": {
+  "title": "Our Partners"
+  },
+
   "Contact": {
     "title": "Contact"
   },

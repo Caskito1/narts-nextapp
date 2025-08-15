@@ -98,7 +98,7 @@ export const Projects = () => {
       </div>
 
       <div className="custom-pagination flex md:hidden justify-center gap-2 mt-6" />
-
+      
       {/* MODAL */}
       {selectedProject && (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 px-4 overflow-y-auto flex justify-center md:items-center items-start py-12">
@@ -130,7 +130,12 @@ export const Projects = () => {
     </div>
   </div>
 )}
-
+  <div className="flex flex-col justify-center items-center text-center p-16 w-full">
+         <p className="md:text-2xl text-base italic text-text-secondary leading-relaxed text-center">
+          “{t("Projects.quote")}”
+        </p>
+         <p className="text-text-secondary md:text-lg text-base">{t("Projects.quoteSignature")}</p>
+        </div>
     </section>
   );
 };
