@@ -65,7 +65,7 @@ export const Partners = () => {
               >
                 <Image
                   src={partners.img}
-                  alt={`Imagen de ${t(`partners.partnersCards.${partners.id}.title`)}`}
+                  alt={`Sponsor ${partners.id}`}
                   width={400}
                   height={250}
                   className="w-full h-48 object-cover"
