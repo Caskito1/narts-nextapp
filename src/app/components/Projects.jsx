@@ -56,7 +56,7 @@ export const Projects = () => {
             prevEl: ".custom-prev",
           }}
           autoplay={{
-            delay: 7000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           modules={[Pagination, Navigation, Autoplay]}
