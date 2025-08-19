@@ -135,6 +135,18 @@
     "slide5": {
        "title": "Título Evento 05",
        "description": "Descripción imagen 05"
+    },
+    "slide6": {
+       "title": "Título Evento 06",
+       "description": "Descripción imagen 06"
+    },
+    "slide7": {
+       "title": "Título Evento 07",
+       "description": "Descripción imagen 07"
+    },
+    "slide8": {
+       "title": "Título Evento 08",
+       "description": "Descripción imagen 08"
     }
   },
 

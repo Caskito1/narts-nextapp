@@ -8,25 +8,37 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
-    src: '/gallery/back-gallery01.webp',
+    src: '/gallery/cine01.webp',
     key: 'slide1'
   },
   {
-    src: '/gallery/back-gallery02.webp',
+    src: '/gallery/letrasconconsc01.webp',
     key: 'slide2'
   },
   {
-    src: '/gallery/back-gallery03.webp',
+    src: '/gallery/raicesentransito02.webp',
     key: 'slide3'
   },
   {
-    src: '/gallery/back-gallery04.webp',
+    src: '/gallery/letrasconconsc02.webp',
     key: 'slide4'
   },
   {
-    src: '/gallery/back-gallery05.webp',
+    src: '/gallery/raicesentransito03.webp',
     key: 'slide5'
   },
+  {
+    src: '/gallery/letrasconconsc03.webp',
+    key: 'slide6'
+  },
+  {
+    src: '/gallery/raicesentransito04.webp',
+    key: 'slide7'
+  },
+  // {
+  //   src: '/gallery/raicesentransito05.webp',
+  //   key: 'slide8'
+  // },
 ];
 
 export const Gallery = () => {
