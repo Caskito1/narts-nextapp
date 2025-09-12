@@ -12,11 +12,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const projects = [
-  { id: 1, key: "project1", img: "/projects/project-card.webp" },
-  { id: 2, key: "project2", img: "/projects/project-card.webp" },
-  { id: 3, key: "project3", img: "/projects/project-card.webp" },
-  { id: 4, key: "project4", img: "/projects/project-card.webp" },
-  { id: 5, key: "project5", img: "/projects/project-card.webp" },
+  { id: 1, key: "project1", img: "/projects/noir-week.webp" },
+  { id: 2, key: "project2", img: "/projects/ellas-crean.webp" },
+  { id: 3, key: "project3", img: "/projects/letras-con-consciencia.webp" },
+  { id: 4, key: "project4", img: "/projects/dialogos-en-colores.webp" },
+  { id: 5, key: "project5", img: "/projects/raices-en-trancito.webp" },
 ];
 
 export const Projects = () => {

@@ -8,12 +8,14 @@ import { Gallery } from "./Gallery";
 import { Press } from "./Press";
 import { TeamsSections } from "./TeamsSections";
 import { Partners } from "./Partners";
+import { HeaderVideo } from "./HeaderVideo";
 
 
 export default function HomeWrapper() {
   return (
     <>    
-      <Header />
+      <HeaderVideo   />
+      {/* <Header /> */}
       <AboutUs />
       <TeamsSections />
       <Projects />
