@@ -14,7 +14,7 @@ export async function POST(req) {
 
     await transporter.sendMail({
       from: `"Web Contact" <${process.env.EMAIL_USER}>`,
-      to: "caskito90@gmail.com",
+      to: process.env.EMAIL_TO,
       subject: "Nuevo mensaje desde la web",
       text: `Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`,
     });
