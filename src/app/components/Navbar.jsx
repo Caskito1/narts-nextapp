@@ -50,7 +50,11 @@ export default function Navbar() {
   }`}
 >
 
-        <div className="text-xl font-bold">LOGO</div>
+        <div className="text-xl font-bold">
+          {isScrolled ? 
+          <img src="/favicon-dark.webp" alt="Logo" width={50}  className="sm:w-[50px] w-[40px] "/>
+          : <img src="/favicon-light.webp" alt="Logo" width={50}  className="sm:w-[50px] w-[40px] "/>}
+        </div>
 
         {/* Desktop menu */}
         <div className="hidden md:flex gap-6 items-center text-lg ">
@@ -89,7 +93,7 @@ export default function Navbar() {
     >
       {/* Top bar: Logo + Close button */}
       <div className="w-full flex justify-between items-center p-4">
-        <div className="text-xl font-bold">LOGO</div>
+        <div className="text-xl font-bold"> <img src="/favicon-dark.webp" alt="Logo" width={40} /></div>
         <button onClick={() => setIsMenuOpen(false)} className="text-black">
           <X size={28} />
         </button>

@@ -7,10 +7,13 @@ export const metadata = {
     "NARTS Foundation promotes culture as a collective act of transformation. We connect art, identity, community, and the environment through festivals, residencies, workshops, and collaborative projects.",
   icons: {
     icon: [
-      { url: "/favicon192.webp", sizes: "192x192" },
-      { url: "/favicon32.webp", sizes: "32x32" },
+      { url: "/favicon-dark.webp", media: "(prefers-color-scheme: dark)" },
+      { url: "/favicon-light.webp", media: "(prefers-color-scheme: light)" },
     ],
-    apple: "/favicon192.webp",
+    apple: [
+      { url: "/favicon-dark.webp", media: "(prefers-color-scheme: dark)" },
+      { url: "/favicon-light.webp", media: "(prefers-color-scheme: light)" },
+    ],
   },
   openGraph: {
     locale: "en_US",

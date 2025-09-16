@@ -3,6 +3,7 @@
 import { useLanguage } from "@/context/LanguageContext";
 import { Facebook, Instagram, Mail } from "lucide-react";
 import scrollIntoView from "smooth-scroll-into-view-if-needed";
+import ContactForm from "./ContactForm";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -54,54 +55,7 @@ export default function Footer() {
         </div>
 
         {/* Formulario de contacto */}
-        <div>
-          <h3 className="text-xl font-semibold mb-4">
-            {t("footer.contactFormTitle") }
-          </h3>
-          <form className="space-y-4">
-            <div>
-              <label htmlFor="name" className="block text-sm mb-1">
-                {t("footer.name") }
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="w-full px-4 py-2 rounded bg-white text-black focus:outline-none"
-                placeholder={t("footer.namePlaceholder")}
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm mb-1">
-                {t("footer.email")}
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-4 py-2 rounded bg-white text-black focus:outline-none"
-                placeholder={t("footer.emailPlaceholder") }
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm mb-1">
-                {t("footer.message") }
-              </label>
-              <textarea
-                id="message"
-                rows={4}
-                className="w-full px-4 py-2 rounded bg-white text-black focus:outline-none"
-                placeholder={
-                  t("footer.messagePlaceholder") 
-                }
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="bg-white text-black px-6 py-2 rounded hover:bg-gray-300 transition"
-            >
-              {t("footer.send") || "Enviar"}
-            </button>
-          </form>
-        </div>
+    <ContactForm/>
       </div>
 
       {/* Navegación inferior */}
