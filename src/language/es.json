@@ -17,21 +17,14 @@
   "quoteSignature": "Marcel Duchamp",
 
   "tabs": {
-    "narts": "Narts",
+   
     "mision": "Misión",
     "vision": "Objetivos",
     "us": "Nosotras"
   },
 
   "content": {
-    "narts": {
-      "title": "Narts",
-      "paragraphs": [
-        "Impulsamos la cultura como un acto colectivo de transformación.",
-        "Desde el cine, la música, el pensamiento, la moda, la literatura, el arte y sus intersecciones, generamos espacios donde la creación se convierte en lenguaje para habitar críticamente el presente.",
-        "A través de programas colaborativos, educación, residencias y acciones públicas, buscamos provocar, cuidar y reimaginar lo común."
-      ]
-    },
+   
     "mision": {
       "title": "Misión",
       "paragraphs": [
@@ -59,7 +52,7 @@
     "seeLess": "Ver menos",
     "card1": {
       "name":"Alicia Escardó",
-      "position":"Rol en Narts",
+      "position":"Vicepresidenta",
       "description": [
         "Alicia Escardó es una escritora uruguaya, que ha publicado sus libros en Uruguay y Argentina. Su narrativa incluye novelas juveniles, un libro de relatos, una novela histórica y novelas noir.",
         "Recibió varios premios por sus obras, entre ellos el primer premio en el Concurso Internacional Horacio Quiroga para “El poder invisible” y el Premio de Narrativa del MEC para “Nayla y el misterio XO” y “La muerte de Pan”, y nominaciones en el Premio Onetti, Bartolomé Hidalgo, y Narradores de Banda Oriental. Como gestora cultural ha organizado eventos culturales como “Semana Negra Uy”, Encuentro Internacional de novela criminal, Ferias del Libro, concursos de relatos policiales, entre otros.",
@@ -69,9 +62,9 @@
      },
     "card2": {
       "name":"Mariella Bruno",
-      "position":"Rol en Narts",
+      "position":"Presidenta",
       "description": [
-        "Arquitecta, gestora cultural y comunicadora, Mariella Bruno es la actual sub-directora de la Fundación NARTS. Su formación y trayectoria combinan diseño, arte, arquitectura y compromiso social, con una visión integradora que impulsa proyectos transformadores tanto a nivel local como internacional.",
+        "Arquitecta, gestora cultural y comunicadora, Mariella Bruno es la actual presidenta de la Fundación NARTS. Su formación y trayectoria combinan diseño, arte, arquitectura y compromiso social, con una visión integradora que impulsa proyectos transformadores tanto a nivel local como internacional.",
         "Egresada de la Facultad de Arquitectura de la Universidad de la República (Uruguay), cuenta con una Maestría en Gestión Cultural y una Maestría en Hábitat y Vivienda, lo que le permite abordar el desarrollo urbano y comunitario desde una mirada profunda, interdisciplinaria y humana.",
         "Desde 2007 es presidenta y cofundadora de Ch2 Design en Miami, donde diseña y desarrolla espacios residenciales únicos con un enfoque sensible, funcional y estético.",
         "Ha liderado importantes iniciativas sociales y académicas en Uruguay, como integrante del programa “Arquitecto de la Comunidad” de la Sociedad de Arquitectos del Uruguay, cofundadora de la ONG AIDESUR y coordinadora general del Programa Post Obra SIAV, centrado en la mejora del hábitat en contextos vulnerables.",
@@ -117,12 +110,12 @@
 
   "Gallery": {
     "slide1": {
-       "title": "Título Evento 01",
-       "description": "Descripción imagen 01"
+       "title": "Diálogo en colores.",
+       "description": "Charla en el Iberoamerican Film Festival 2024"
     },
     "slide2": {
-       "title": "Título Evento 02",
-       "description": "Descripción imagen 02"
+       "title": "Letras con conciencia.",
+       "description": "Entrevista con Vicky Durán, autora del libro El bullying no es solo cosa de niños"
     },
     "slide3": {
        "title": "Título Evento 03",
@@ -155,26 +148,26 @@
     "subtitle": "Notas, coberturas y publicaciones sobre nuestro trabajo en el territorio.",
     "pressCard" : {
       "press1": {
-        "title": "Título1",
-        "description": "Descripción1",
+        "title": "El 'noir' de Miami en el Koubek Center",
+        "description": "EL NUEVO HERALD",
         "button": "Ver Nota"
         
       },
       "press2": {
-        "title": "Título2",
-        "description": "Descripción2",
+        "title": "Literatura, crimen y arte bajo las sombras",
+        "description": "DALE PLAY VDM RADIO",
         "button": "Ver Nota"
         
       },
       "press3": {
-        "title": "Título3",
-        "description": "Descripción3",
+        "title": "Un evento dedicado al género policial",
+        "description": "ARTBURST",
         "button": "Ver Nota"
        
       },
       "press4": {
-        "title": "Título4",
-        "description": "Descripción4",
+        "title": "Noir Week en Miami: con escritores, un detective y un criminalista",
+        "description": "EL OBSERVADOR",
         "button": "Ver Nota"
        
       },

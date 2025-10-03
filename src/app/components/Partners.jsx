@@ -24,7 +24,7 @@ export const Partners = () => {
 
   return (
     <section
-      className="min-h-screen flex flex-col items-center justify-center bg-background text-text-primary relative px-4 py-12"
+      className="sm:min-h-screen flex flex-col items-center justify-center bg-background text-text-primary relative px-4 py-12"
       id="partners"
     >
       <h2 className="text-3xl font-bold mb-6">{t("Partners.title")}</h2>

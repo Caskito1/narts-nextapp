@@ -7,32 +7,27 @@ const pressData = [
     id: 1,
     key: "press1",
     img: "/press/nota-prensa01.webp",
-    link: "https://ejemplo.com/articulo1",
+    link: "https://www.elnuevoherald.com/vivir-mejor/artes-letras/article311790902.html",
   },
   {
     id: 2,
     key: "press2",
     img: "/press/nota-prensa01.webp",
-    link: "https://ejemplo.com/articulo2",
+    link: "https://www.youtube.com/watch?v=Z1tqJXlBRqE",
   },
   {
     id: 3,
     key: "press3",
     img: "/press/nota-prensa01.webp",
-    link: "https://ejemplo.com/articulo3",
+    link: "https://www.artburstmiami.com/articulos-en-espanol/el-noir-de-miami-en-el-koubek-center-un-evento-dedicado-al-genero-policial",
   },
   {
     id: 4,
     key: "press4",
     img: "/press/nota-prensa01.webp",
-    link: "https://ejemplo.com/articulo4",
+    link: "https://www.elobservador.com.uy/estados-unidos/cultura/noir-week-miami-escritores-un-detective-y-un-criminalista-empieza-el-encuentro-la-novela-policial-n6014174",
   },
-  {
-    id: 5,
-    key: "press5",
-    img: "/press/nota-prensa01.webp",
-    link: "https://ejemplo.com/articulo5",
-  },
+ 
 ];
 export const Press = () => {
   const { t } = useLanguage();

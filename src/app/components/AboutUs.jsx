@@ -6,7 +6,7 @@ import scrollIntoView from "smooth-scroll-into-view-if-needed";
 import { AccordionItem } from "./AccordionItem";
 
 export const AboutUs = () => {
-  const [selected, setSelected] = useState("narts");
+  const [selected, setSelected] = useState("mision");
   const { t } = useLanguage();
   
 
@@ -43,7 +43,7 @@ export const AboutUs = () => {
        
       {/* Tabs para mobile */}
 <div className="w-full md:hidden mt-2  space-y-2">
-  {["narts", "mision", "vision", "us"].map((key, index, arr) => (
+  {[ "mision", "vision", "us"].map((key, index, arr) => (
     <AccordionItem
       key={key}
       keyName={key}
@@ -72,7 +72,7 @@ export const AboutUs = () => {
 
 {/* Tabs para desktop */}
 <div className="hidden md:flex gap-4 font-semibold md:items-start mt-12 absolute top-4">
-  {["narts", "mision", "vision", "us"].map((key) => (
+  {[ "mision", "vision", "us"].map((key) => (
     <button
       key={key}
       onClick={() => handleTabClick(key)}

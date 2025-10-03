@@ -5,7 +5,7 @@ export const HeaderVideo = () => {
     <section className="relative h-screen">
       {/* Video de fondo */}
       <video
-        src="/videos/videoHeader.mp4"
+        src="/videos/header-desktop.mp4"
         autoPlay
         loop
         muted

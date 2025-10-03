@@ -34,7 +34,7 @@ export default function Navbar() {
 
   const menuItems = [
     { label: "about-us", section: "about-us" },
-    { label: "projects", section: "projects" },
+    { label: "projects", section: "project2" },
     { label: "press", section: "press" },
     { label: "partners", section: "partners" },
     { label: "contact", section: "contact" },

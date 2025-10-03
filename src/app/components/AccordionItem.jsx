@@ -11,7 +11,7 @@ export const AccordionItem = ({
   isLast,
 }) => {
   const borderRadius = `${isFirst ? "rounded-t-lg" : ""} ${isLast ? "rounded-b-lg" : ""}`;
-  
+  console.log(content)
 
   return (
     <div
@@ -46,7 +46,7 @@ export const AccordionItem = ({
           >
             <div className="border-t  pt-4 border-color-secundary" >
               <div className="space-y-2 text-text-secondary">
-                {content.paragraphs.map((p, i) => (
+                {content?.paragraphs.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
               </div>

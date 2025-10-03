@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
-import { Facebook, Instagram, Mail } from "lucide-react";
+import { Facebook, Instagram, Mail, Phone } from "lucide-react";
 import scrollIntoView from "smooth-scroll-into-view-if-needed";
 import ContactForm from "./ContactForm";
 
@@ -27,12 +27,23 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
         {/* Info institucional */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">LOGO</h2>
-          <p className="text-sm opacity-80 mb-6">{t("footer.description")}</p>
+          <img src="logo-light.webp" alt="" width={200}/>
+          <p className="text-sm opacity-80 mb-6 mt-6">{t("footer.description")}</p>
           <div className="text-sm space-y-1">
-            <p>Email: infonaartsfoundation@gmail.com</p>
-            <p>Tel: +1 786 375 0035</p>
-            <div className="flex gap-4 mt-4">
+            <a
+              href="mailto:infonaartsfoundation@gmail.com"
+              className="flex pb-4 transition-transform duration-300 hover:scale-110 origin-left"
+            >
+              <Mail size={20} />
+              <p className="pl-4">infonaartsfoundation@gmail.com</p>
+            </a>
+
+            <a href="tel:+17863750035" 
+               className="flex transition-transform duration-300 hover:scale-105 origin-left">
+              <Phone size={20} />
+              <p className="pl-4 ">+1 786 375 0035</p>
+            </a>
+            {/* <div className="flex gap-4 mt-4">
               <a href="#" className="hover:text-gray-300" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
@@ -50,12 +61,12 @@ export default function Footer() {
               >
                 <Mail size={20} />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Formulario de contacto */}
-    <ContactForm/>
+        <ContactForm />
       </div>
 
       {/* Navegación inferior */}

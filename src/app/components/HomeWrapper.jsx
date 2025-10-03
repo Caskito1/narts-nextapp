@@ -9,6 +9,7 @@ import { Press } from "./Press";
 import { TeamsSections } from "./TeamsSections";
 import { Partners } from "./Partners";
 import { HeaderVideo } from "./HeaderVideo";
+import { Projects2 } from "./Projects2";
 
 
 export default function HomeWrapper() {
@@ -18,7 +19,8 @@ export default function HomeWrapper() {
       {/* <Header /> */}
       <AboutUs />
       <TeamsSections />
-      <Projects />
+      {/* <Projects /> */}
+      <Projects2 />
       <Gallery />
       <Press />
       <Partners />
