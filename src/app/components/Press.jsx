@@ -1,5 +1,5 @@
 import { useLanguage } from "@/context/LanguageContext";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, StickyNote } from "lucide-react";
 import React from "react";
 
 const pressData = [
@@ -47,7 +47,7 @@ export const Press = () => {
       </div>
 
       {/* Columna Derecha - Tabs + contenido */}
-      <div className=" relative w-full md:w-1/2 bg-background-alt flex flex-col justify-center md:items-start items-center p-10 md:p-20 space-y-8 min-h-[100vh] ">
+      <div className=" relative w-full md:w-1/2 bg-background-alt flex flex-col justify-center md:items-start items-center p-10 md:p-20 space-y-8 md:min-h-[100vh] ">
         <div className="flex flex-col gap-6 max-w-[700px] w-full">
           {pressData.map((item) => {
             const data = t(`Press.pressCard.${item.key}`, {
@@ -56,22 +56,28 @@ export const Press = () => {
             return (
               <div
                 key={item.id}
-                className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-md transform transition-transform hover:scale-[1.02] hover:shadow-lg md:h-28 h-52 "
+                className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-md transform transition-transform hover:scale-[1.02] hover:shadow-lg md:h-28  "
               >
-                <img
+                  <div className="flex pl-4 pt-4 ">
+                    <StickyNote   />
+                    </div>
+                {/* <img
                   src={item.img}
                   alt={data.title}
                   className="w-full md:w-1/3 h-28 object-cover"
-                />
-                <div className="flex flex-col justify-between p-3 md:w-2/3">
+                /> */}
+                <div className="flex flex-col justify-between p-3   pl-4">
+                  
                   <div className="leading-tight">
-                    <h3 className="text-base font-semibold text-text-primary truncate">
+
+                    <h3 className="text-base font-semibold text-text-primary ">
                       {data.title}
                     </h3>
                     <p className="text-xs text-text-secondary line-clamp-2">
                       {data.description}
                     </p>
                   </div>
+                  
                   <div className="mt-1 flex items-center gap-1 group transition-transform duration-200 hover:scale-105 origin-left">
                     <a
                       href={item.link}
