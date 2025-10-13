@@ -31,7 +31,7 @@ export default function Footer() {
           <p className="text-sm opacity-80 mb-6 mt-6">{t("footer.description")}</p>
           <div className="text-sm space-y-1">
             <a
-              href="mailto:infonaartsfoundation@gmail.com"
+              href="mailto:nartsfoundation@gmail.com"
               className="flex pb-4 transition-transform duration-300 hover:scale-110 origin-left"
             >
               <Mail size={20} />
