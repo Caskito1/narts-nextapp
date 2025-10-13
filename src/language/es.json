@@ -109,6 +109,7 @@
   },
 
   "Gallery": {
+    "title":"Fotos de eventos ",
     "slide1": {
        "title": "Diálogo en colores.",
        "description": "Charla en el Iberoamerican Film Festival 2024"
@@ -118,28 +119,53 @@
        "description": "Entrevista con Vicky Durán, autora del libro El bullying no es solo cosa de niños"
     },
     "slide3": {
-       "title": "Título Evento 03",
-       "description": "Descripción imagen 03"
+       "title": "Noir Week Miami 2025",
+       "description": "Anfiteatro"
     },
     "slide4": {
-       "title": "Título Evento 04",
-       "description": "Descripción imagen 04"
+       "title": "Noir Week Miami 2025",
+       "description": "El detective de Noir Week"
     },
     "slide5": {
-       "title": "Título Evento 05",
-       "description": "Descripción imagen 05"
+       "title": "Noir Week Miami 2025",
+       "description": "Escritores en Noir Week"
     },
     "slide6": {
-       "title": "Título Evento 06",
-       "description": "Descripción imagen 06"
+       "title": "Noir Week Miami 2025",
+       "description": "Inauguración"
     },
-    "slide7": {
-       "title": "Título Evento 07",
-       "description": "Descripción imagen 07"
-    },
+  
     "slide8": {
-       "title": "Título Evento 08",
-       "description": "Descripción imagen 08"
+       "title": "Noir Week Miami 2025",
+       "description": "Inauguración"
+    },
+    "slide9": {
+       "title": "Noir Week Miami 2025",
+       "description": "Colección Fashion Victim"
+    },
+    "slide10": {
+       "title": "Noir Week Miami 2025",
+       "description": "La femme fatale"
+    },
+    "slide11": {
+       "title": "Noir Week Miami 2025",
+       "description": "Mesas de Noir Week"
+    },
+    "slide12": {
+       "title": "Noir Week Miami 2025"
+       
+    },
+    "slide13": {
+       "title": "Noir Week Miami 2025"
+    
+    },
+    "slide14": {
+       "title": "Noir Week Miami 2025",
+       "description": "Venta de Libros"
+    },
+    "slide15": {
+       "title": "Noir Week Miami 2025",
+       "description": "Exposición Campfire Stories"
     }
   },
 

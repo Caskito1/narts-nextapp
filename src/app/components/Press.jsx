@@ -33,7 +33,7 @@ export const Press = () => {
   const { t } = useLanguage();
   return (
     <section
-      className="min-h-[100dvh] flex flex-col md:flex-row  items-center justify-center bg-background text-text-primary"
+      className="sm:min-h-[100dvh] flex flex-col md:flex-row  items-center justify-center bg-background text-text-primary"
       id="press"
     >
       {/* Columna Izquierda - Frase y título */}

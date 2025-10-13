@@ -8,37 +8,66 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
-    src: '/gallery/cine01.webp',
+    src: '/gallery/back-gallery01.webp',
     key: 'slide1'
   },
   {
-    src: '/gallery/letrasconconsc01.webp',
+    src: '/gallery/back-gallery02.webp',
     key: 'slide2'
   },
   {
-    src: '/gallery/raicesentransito02.webp',
+    src: '/gallery/back-gallery03.webp',
     key: 'slide3'
   },
   {
-    src: '/gallery/letrasconconsc02.webp',
+    src: '/gallery/back-gallery04.webp',
     key: 'slide4'
   },
   {
-    src: '/gallery/raicesentransito03.webp',
+    src: '/gallery/back-gallery05.webp',
     key: 'slide5'
   },
   {
-    src: '/gallery/letrasconconsc03.webp',
+    src: '/gallery/back-gallery06.webp',
     key: 'slide6'
   },
   {
-    src: '/gallery/raicesentransito04.webp',
+    src: '/gallery/back-gallery07.webp',
     key: 'slide7'
   },
-  // {
-  //   src: '/gallery/raicesentransito05.webp',
-  //   key: 'slide8'
-  // },
+  {
+    src: '/gallery/back-gallery08.webp',
+    key: 'slide8'
+  },
+  {
+    src: '/gallery/back-gallery09.webp',
+    key: 'slide9'
+  },
+  {
+    src: '/gallery/back-gallery10.webp',
+    key: 'slide10'
+  },
+  {
+    src: '/gallery/back-gallery11.webp',
+    key: 'slide11'
+  },
+  {
+    src: '/gallery/back-gallery12.webp',
+    key: 'slide12'
+  },
+  {
+    src: '/gallery/back-gallery13.webp',
+    key: 'slide13'
+  },
+  {
+    src: '/gallery/back-gallery14.webp',
+    key: 'slide14'
+  },
+  {
+    src: '/gallery/back-gallery15.webp',
+    key: 'slide15'
+  },
+
 ];
 
 export const Gallery = () => {
@@ -47,7 +76,7 @@ export const Gallery = () => {
   return (
     <section
       id="gallery"
-      className="relative w-full md:h-[700px] h-[300px] bg-muted text-text-primary overflow-hidden"
+      className="relative w-full md:h-[1200px] h-[300px] bg-muted text-text-primary overflow-hidden"
     >
       {/* Swiper Slider */}
    {/* Contenedor del slider con flechas */}
@@ -74,6 +103,8 @@ export const Gallery = () => {
   allowTouchMove={true}
   pagination={false}
   className="w-full h-full"
+    observer={true}
+  observeParents={true}
 >
   {slides.map((slide, index) => (
     <SwiperSlide key={index}>
@@ -102,6 +133,7 @@ export const Gallery = () => {
     </SwiperSlide>
   ))}
 </Swiper>
+
         {/* Flecha derecha */}
         <button
           className="custom-next absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-30 text-6xl text-[var(--color-secondary)] hover:text-[var(--color-text-primary)] flex"

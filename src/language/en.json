@@ -113,39 +113,62 @@
 },
 
   "Gallery": {
-   "slide1": {
-   "title": "Dialogue in Colors.",
-   "description": "Talk at the Iberoamerican Film Festival 2024"
-},
-"slide2": {
-   "title": "Letters with Awareness.",
-   "description": "Interview with Vicky Durán, author of the book Bullying Is Not Just a Kids’ Issue"
-},
+     "title":"Gallery",
+    "slide1": {
+       "title": "Diálogo en colores.",
+       "description": "Charla en el Iberoamerican Film Festival 2024"
+    },
+    "slide2": {
+       "title": "Letras con conciencia.",
+       "description": "Entrevista con Vicky Durán, autora del libro El bullying no es solo cosa de niños"
+    },
     "slide3": {
-       "title": "Title Event 03",
-       "description": "Description image 03"
-    },
-    "slide4": {
-       "title": "Title Event 04",
-       "description": "Description image 04"
-    },
-    "slide5": {
-       "title": "Title Event 05",
-       "description": "Description image 05"
-    },
-    "slide6": {
-       "title": "Title Event 06",
-       "description": "Description image 06"
-    },
-    "slide7": {
-       "title": "Title Event 07",
-       "description": "Description image 06"
-    },
-    "slide8": {
-       "title": "Title Event 08",
-       "description": "Description image 07"
-    }
+    "title": "Noir Week Miami 2025",
+    "description": "Amphitheater"
   },
+  "slide4": {
+    "title": "Noir Week Miami 2025",
+    "description": "The Detective of Noir Week"
+  },
+  "slide5": {
+    "title": "Noir Week Miami 2025",
+    "description": "Writers at Noir Week"
+  },
+  "slide6": {
+    "title": "Noir Week Miami 2025",
+    "description": "Opening Ceremony"
+  },
+  "slide8": {
+    "title": "Noir Week Miami 2025",
+    "description": "Opening Ceremony"
+  },
+  "slide9": {
+    "title": "Noir Week Miami 2025",
+    "description": "Fashion Victim Collection"
+  },
+  "slide10": {
+    "title": "Noir Week Miami 2025",
+    "description": "The Femme Fatale"
+  },
+  "slide11": {
+    "title": "Noir Week Miami 2025",
+    "description": "Noir Week Panels"
+  },
+  "slide12": {
+    "title": "Noir Week Miami 2025"
+  },
+  "slide13": {
+    "title": "Noir Week Miami 2025"
+  },
+  "slide14": {
+    "title": "Noir Week Miami 2025",
+    "description": "Book Sale"
+  },
+  "slide15": {
+    "title": "Noir Week Miami 2025",
+    "description": "Campfire Stories Exhibition"
+  }
+},
 
  "Press": {
   "title": "Press",

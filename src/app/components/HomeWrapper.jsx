@@ -10,6 +10,7 @@ import { TeamsSections } from "./TeamsSections";
 import { Partners } from "./Partners";
 import { HeaderVideo } from "./HeaderVideo";
 import { Projects2 } from "./Projects2";
+import { GalleryGrid } from "./Gallery2";
 
 
 export default function HomeWrapper() {
@@ -21,7 +22,8 @@ export default function HomeWrapper() {
       <TeamsSections />
       {/* <Projects /> */}
       <Projects2 />
-      <Gallery />
+      {/* <Gallery /> */}
+      <GalleryGrid />
       <Press />
       <Partners />
       

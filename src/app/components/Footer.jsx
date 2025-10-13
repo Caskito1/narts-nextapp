@@ -35,7 +35,7 @@ export default function Footer() {
               className="flex pb-4 transition-transform duration-300 hover:scale-110 origin-left"
             >
               <Mail size={20} />
-              <p className="pl-4">infonaartsfoundation@gmail.com</p>
+              <p className="pl-4">nartsfoundation@gmail.com</p>
             </a>
 
             <a href="tel:+17863750035" 
