@@ -41,9 +41,9 @@ export const MobileGallery = ({ slides, t }) => {
                 loading="lazy"
               />
               <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10" />
-              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-20 text-center px-4">
+              <div className="absolute top-0 left-0 w-full h-full flex items-end justify-center z-20 text-center px-4 py-4">
                 <div className="text-white max-w-2xl">
-                  <h2 className="text-2xl md:text-5xl font-bold mb-4">
+                  <h2 className="text-lg md:text-5xl font-bold ">
                     {t(`Gallery.${slide.key}.title`)}
                   </h2>
                   <p className="text-base md:text-lg">

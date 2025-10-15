@@ -120,7 +120,7 @@ const handleShowFullDescription = () => {
             </button>
             <div>
               <h3 className="text-2xl font-bold">{name}</h3>
-              <p className="text-text-secondary mb-6">{role}</p>
+              {/* <p className="text-text-secondary mb-6">{role}</p> */}
               <div className="text-text-secondary space-y-4">
                 {description}
               </div>
@@ -154,7 +154,7 @@ const handleShowFullDescription = () => {
     />
     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent text-white px-4 py-3 text-left transition-opacity duration-300">
       <h3 className="text-lg font-semibold">{name}</h3>
-      <p className="text-sm text-accent ">{role}</p>
+      {/* <p className="text-sm text-accent ">{role}</p> */}
     </div>
   </button>
 )}

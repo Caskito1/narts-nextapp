@@ -54,7 +54,7 @@ export const Projects2 = () => {
           {project.website && (
           <a className="flex" href={project.link} target="_blank">
                <p className="uppercase text-md font-ui font-semibold">
-                  Ver Sitio
+                  {t(`Projects.projectCards.${project.key}.websiteButton`)} 
                 </p>
                 <ChevronRight />
           </a>
@@ -125,7 +125,7 @@ export const Projects2 = () => {
               >
            
                    <p className="uppercase text-xl font-ui font-semibold transform transition-transform duration-300 hover:scale-110 ">
-                  Ver Sitio
+                  {t(`Projects.projectCards.${selectedProject.key}.websiteButton`)}
                 </p>
              
               </a>
