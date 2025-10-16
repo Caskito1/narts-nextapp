@@ -1,0 +1,151 @@
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import { useLanguage } from '@/context/LanguageContext';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+
+
+const slides = [
+  {
+    src: '/gallery/back-gallery01.webp',
+    key: 'slide1'
+  },
+  {
+    src: '/gallery/back-gallery02.webp',
+    key: 'slide2'
+  },
+  {
+    src: '/gallery/back-gallery03.webp',
+    key: 'slide3'
+  },
+  {
+    src: '/gallery/back-gallery04.webp',
+    key: 'slide4'
+  },
+  {
+    src: '/gallery/back-gallery05.webp',
+    key: 'slide5'
+  },
+  {
+    src: '/gallery/back-gallery06.webp',
+    key: 'slide6'
+  },
+  {
+    src: '/gallery/back-gallery07.webp',
+    key: 'slide7'
+  },
+  {
+    src: '/gallery/back-gallery08.webp',
+    key: 'slide8'
+  },
+  {
+    src: '/gallery/back-gallery09.webp',
+    key: 'slide9'
+  },
+  {
+    src: '/gallery/back-gallery10.webp',
+    key: 'slide10'
+  },
+  {
+    src: '/gallery/back-gallery11.webp',
+    key: 'slide11'
+  },
+  {
+    src: '/gallery/back-gallery12.webp',
+    key: 'slide12'
+  },
+  {
+    src: '/gallery/back-gallery13.webp',
+    key: 'slide13'
+  },
+  {
+    src: '/gallery/back-gallery14.webp',
+    key: 'slide14'
+  },
+  {
+    src: '/gallery/back-gallery15.webp',
+    key: 'slide15'
+  },
+
+];
+
+export const Gallery = () => {
+  const { t } = useLanguage();
+
+  return (
+    <section
+      id="gallery"
+      className="relative w-full md:h-[1200px] h-[300px] bg-muted text-text-primary overflow-hidden"
+    >
+      {/* Swiper Slider */}
+   {/* Contenedor del slider con flechas */}
+      <div className="w-full h-full relative flex items-center justify-center">
+        {/* Flecha izquierda */}
+        <button
+          className="custom-prev absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-30 text-4xl text-[var(--color-secondary)] hover:text-[var(--color-text-primary)] flex"
+          aria-label="Anterior"
+        >
+          <ChevronLeft className="w-12 h-12" />
+        </button>
+
+        {/* Swiper Slider */}
+       <Swiper
+  modules={[Autoplay, Navigation]}
+  spaceBetween={0}
+  slidesPerView={1}
+  loop={true}
+  autoplay={{ delay: 5000, disableOnInteraction: false }}
+  navigation={{
+    nextEl: '.custom-next',
+    prevEl: '.custom-prev',
+  }}
+  allowTouchMove={true}
+  pagination={false}
+  className="w-full h-full"
+    observer={true}
+  observeParents={true}
+>
+  {slides.map((slide, index) => (
+    <SwiperSlide key={index}>
+      <div className="relative w-full h-full">
+        {/* Imagen de fondo */}
+        <img
+          src={slide.src}
+          alt={`Slide ${index + 1}`}
+          className="w-full h-full object-cover"
+        />
+
+        {/* Overlay oscuro */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10 opacity-40" />
+
+
+        {/* Texto encima del slide */}
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-20 text-center px-4">
+          <div className="text-white max-w-2xl">
+            <h2 className="text-2xl md:text-5xl font-bold mb-4">
+               {t(`Gallery.${slide.key}.title`)}
+            </h2>
+            <p className="text-base md:text-lg"> {t(`Gallery.${slide.key}.description`)}</p>
+          </div>
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
+        {/* Flecha derecha */}
+        <button
+          className="custom-next absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-30 text-6xl text-[var(--color-secondary)] hover:text-[var(--color-text-primary)] flex"
+          aria-label="Siguiente"
+        >
+         <ChevronRight className="w-12 h-12" />
+        </button>
+      </div>
+
+    
+     
+    
+    </section>
+  );
+};

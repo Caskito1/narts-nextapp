@@ -1,0 +1,52 @@
+// import nodemailer from "nodemailer";
+
+// export async function POST(req) {
+//   try {
+//     const { name, email, message } = await req.json();
+
+//     const transporter = nodemailer.createTransport({
+//       service: "gmail",
+//       auth: {
+//         user: process.env.EMAIL_USER,
+//         pass: process.env.EMAIL_PASS,
+//       },
+//     });
+
+//     await transporter.sendMail({
+//       from: `"Web Contact" <${process.env.EMAIL_USER}>`,
+//       to: process.env.EMAIL_TO,
+//       subject: "Nuevo mensaje desde la web",
+//       text: `Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`,
+//     });
+
+//     return new Response(JSON.stringify({ success: true }), { status: 200 });
+//   } catch (err) {
+//     console.error("Error enviando email:", err);
+//     return new Response(JSON.stringify({ error: "Error enviando email" }), {
+//       status: 500,
+//     });
+//   }
+// }
+
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+export async function POST(req) {
+  try {
+    const { name, email, message } = await req.json();
+
+    await resend.emails.send({
+      from: "Contacto Web <contacto@nartsfoundation.org>",
+      to: process.env.EMAIL_TO,
+      subject: "Nuevo mensaje desde la web",
+      text: `Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`,
+    });
+
+    return new Response(JSON.stringify({ success: true }), { status: 200 });
+  } catch (err) {
+    console.error("Error enviando email:", err);
+    return new Response(JSON.stringify({ error: err.message }), { status: 500 });
+  }
+}
+
