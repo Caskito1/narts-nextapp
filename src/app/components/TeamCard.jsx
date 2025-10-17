@@ -73,7 +73,7 @@ const handleShowFullDescription = () => {
     <img src={image} alt={name} className="w-full h-84 object-cover" />
     <div className="relative p-4 pb-4">
       <h3 className="text-xl font-bold">{name}</h3>
-      <p className="text-text-secondary text-sm mb-2">{role}</p>
+      {/* <p className="text-text-secondary text-sm mb-2">{role}</p> */}
 
       <div className="text-text-secondary space-y-3 text-sm">
         {showFullDescription
