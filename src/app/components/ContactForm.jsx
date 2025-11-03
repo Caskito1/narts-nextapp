@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-console.log("reCAPTCHA sitekey:", process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY);
+
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
