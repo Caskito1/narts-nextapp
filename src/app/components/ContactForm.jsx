@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -8,6 +9,7 @@ export default function ContactForm() {
     email: "",
     message: "",
   });
+   const [captchaValue, setCaptchaValue] = useState(null);
   const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
@@ -19,18 +21,23 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!captchaValue) {
+      setStatus("⚠️ Por favor completa el captcha.");
+      return;
+    }
     setStatus("Enviando...");
 
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, captcha: captchaValue }),
       });
 
       if (res.ok) {
         setStatus("Mensaje enviado con éxito ✅");
         setFormData({ name: "", email: "", message: "" });
+        setCaptchaValue(null);
       } else {
         setStatus("Error al enviar ❌");
       }
@@ -80,6 +87,10 @@ export default function ContactForm() {
           required
         ></textarea>
       </div>
+       <ReCAPTCHA
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+        onChange={(value) => setCaptchaValue(value)}
+      />
       <button
         type="submit"
         className="bg-white text-black px-6 py-2 rounded hover:bg-gray-300 transition"
